@@ -1,0 +1,537 @@
+{
+  "name": "ns1:timeSeriesResponseType",
+  "declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+  "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+    "queryInfo": {
+      "queryURL": "http://waterservices.usgs.gov/nwis/iv/format=json&sites=09380000,09402500&parameterCd=00060,00065",
+      "criteria": {
+        "locationParam": "[ALL:09380000, ALL:09402500]",
+        "variableParam": "[00060, 00065]",
+        "parameter": []
+      },
+      "note": [
+        {
+          "value": "[ALL:09380000, ALL:09402500]",
+          "title": "filter:sites"
+        },
+        {
+          "value": "[mode=LATEST, modifiedSince=null]",
+          "title": "filter:timeRange"
+        },
+        {
+          "value": "methodIds=[ALL]",
+          "title": "filter:methodId"
+        },
+        {
+          "value": "2026-10-27T20:35:27.011Z",
+          "title": "requestDT"
+        },
+        {
+          "value": "f16b3f30-d245-11f1-b86f-005056beda50",
+          "title": "requestId"
+        },
+        {
+          "value": "Provisional data are subject to revision. Go to http://waterdata.usgs.gov/nwis/help/?provisional for more information.",
+          "title": "disclaimer"
+        },
+        {
+          "value": "caas01",
+          "title": "server"
+        }
+      ]
+    },
+    "timeSeries": [
+      {
+        "sourceInfo": {
+          "siteName": "COLORADO RIVER AT LEES FERRY, AZ",
+          "siteCode": [
+            {
+              "value": "09380000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-07:00",
+              "zoneAbbreviation": "MST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-06:00",
+              "zoneAbbreviation": "MDT"
+            },
+            "siteUsesDaylightSavingsTime": false
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 36.86433333,
+              "longitude": -111.58787222
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "140700061105",
+              "name": "hucCd"
+            },
+            {
+              "value": "04",
+              "name": "stateCd"
+            },
+            {
+              "value": "04005",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999.0,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-27T08:00:00.000-07:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 6128
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:09380000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "COLORADO RIVER AT LEES FERRY, AZ",
+          "siteCode": [
+            {
+              "value": "09380000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-07:00",
+              "zoneAbbreviation": "MST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-06:00",
+              "zoneAbbreviation": "MDT"
+            },
+            "siteUsesDaylightSavingsTime": false
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 36.86433333,
+              "longitude": -111.58787222
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "140700061105",
+              "name": "hucCd"
+            },
+            {
+              "value": "04",
+              "name": "stateCd"
+            },
+            {
+              "value": "04005",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999.0,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "7.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-27T08:00:00.000-07:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[PRIMARY STAGE]",
+                "methodID": 315517
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:09380000:00065:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "COLORADO RIVER NEAR GRAND CANYON, AZ",
+          "siteCode": [
+            {
+              "value": "09402500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-07:00",
+              "zoneAbbreviation": "MST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-06:00",
+              "zoneAbbreviation": "MDT"
+            },
+            "siteUsesDaylightSavingsTime": false
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 36.10137176,
+              "longitude": -112.0862795
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "15010001",
+              "name": "hucCd"
+            },
+            {
+              "value": "04",
+              "name": "stateCd"
+            },
+            {
+              "value": "04005",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999.0,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "11600",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-27T13:15:00.000-07:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 6290
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:09402500:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "COLORADO RIVER NEAR GRAND CANYON, AZ",
+          "siteCode": [
+            {
+              "value": "09402500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-07:00",
+              "zoneAbbreviation": "MST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-06:00",
+              "zoneAbbreviation": "MDT"
+            },
+            "siteUsesDaylightSavingsTime": false
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 36.10137176,
+              "longitude": -112.0862795
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "15010001",
+              "name": "hucCd"
+            },
+            {
+              "value": "04",
+              "name": "stateCd"
+            },
+            {
+              "value": "04005",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999.0,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "16.49",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-27T13:15:00.000-07:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[ENCODER]",
+                "methodID": 6291
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          },
+          {
+            "value": [
+              {
+                "value": "16.36",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-27T13:15:00.000-07:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[RADAR]",
+                "methodID": 286919
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:09402500:00065:00000"
+      }
+    ]
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": false
+}
